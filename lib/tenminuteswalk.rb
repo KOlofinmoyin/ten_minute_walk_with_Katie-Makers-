@@ -1,4 +1,6 @@
 
 def tenminuteswalk(directions)
-  false
+  if directions.length < 10
+    false
+  end
 end
