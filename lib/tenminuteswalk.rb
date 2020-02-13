@@ -7,9 +7,9 @@ def tenminuteswalk(directions)
   
   if directions.length != 10
     false
-    elsif 
+  else
     directions.each do |coordinate| 
-    if coordinate == 's'
+      if coordinate == 's'
         south += 1
       elsif coordinate == 'n'
         north += 1
@@ -22,10 +22,10 @@ def tenminuteswalk(directions)
 
     if south != north
       false
-      elsif east != west
-        false
-      else
-        true
+    elsif east != west
+      false
+    else
+      true
     end
   end
 end
